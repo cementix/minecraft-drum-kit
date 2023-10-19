@@ -7,11 +7,21 @@ body {
     background-color: #0F0F0F;
 }
 
+.drumWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
 .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+}
+
+.logo > img {
+    max-height: 80px;
 }
 
 .title {
@@ -20,6 +30,7 @@ body {
     color: white;
     font-size: 3rem;
     font-family: "Pixelify Sans", sans-serif;
+
 }
 
 .title h2 {
@@ -28,10 +39,10 @@ body {
 
 .drumList {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     gap: 100px;
-    height: 55vh;
 }
 
 .drum {
@@ -77,4 +88,18 @@ body {
 .pressed {
     background-color: #ff5733;
     transform: scale(0.95);
+}
+
+@media (max-width: 500px) {
+    .logo > img {
+        height: 40px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .title > img {
+        height: 40px;
+    }
 }
