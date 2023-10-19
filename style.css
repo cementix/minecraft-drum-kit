@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.drumList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 55vh;
+}
+
+.drum {
+    height: 220px;
+    width: 220px;
+    color: #232D3F;
+    font-size: 7rem;
+    border: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0 0 0 5px #232D3F;
+    text-shadow: 2px 2px 2px red;
+}
+
+.q {
+    background-image: url(./assets/images/zombie.png);
+    background-size: cover;
+}
+
+.w {
+    background-image: url(./assets/images/sheep.png);
+    background-size: cover;
+}
+
+.e {
+    background-image: url(./assets/images/villager.png);
+    background-size: cover;
+}
+
+.r {
+    background-image: url(./assets/images/pig.png);
+    background-size: cover;
+}
+
+.t {
+    background-image: url(./assets/images/creeper.png);
+    background-size: cover;
+}
+
+.pressed {
+    background-color: #ff5733;
+    transform: scale(0.95);
+}
